@@ -541,3 +541,13 @@ header .navbar {
     gap: 20px;
   }
 }
+.footer-email {
+  color: var(--primary-color); /* Verdele tău frumos */
+  text-decoration: none;       /* Scoate linia de sub text */
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-email:hover {
+  color: var(--secondary-color); /* Se face portocaliu când pui mouse-ul pe el */
+}
