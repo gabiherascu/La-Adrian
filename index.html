@@ -28,13 +28,13 @@
             <a href="#about" class="nav-link">Despre noi</a>
           </li>
           <li class="nav-item">
-            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#menu" class="nav-link">Produsele noastre</a>
           </li>
           <li class="nav-item">
             <a href="#testimonials" class="nav-link">Recenzii</a>
           </li>
           <li class="nav-item">
-            <a href="#gallery" class="nav-link">Produsele noastere</a>
+            <a href="#testimonials2" class="nav-link">Galerie</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
@@ -52,7 +52,7 @@
             <h3 class="subtitle">Parfumează-ți mâncarea cu cele mai bune plante aromatice locale!</h3>
             <p class="description">Bine ai venit în grădina noastră, unde fiecare frunză de mentă, rozmarin și kale este crescută cu dragoste și culeasă manual, special pentru tine.</p>
             <div class="buttons">
-              <a href="#gallery" class="button order-now">Produsele Noastrere</a>
+              <a href="#menu" class="button order-now">Produsele Noastre</a>
               <a href="#contact" class="button contact-us">Contactează-ne</a>
             </div>
           </div>
@@ -168,8 +168,8 @@
           </div>
         </div>
       </section>
-      <section class="testimonials-section" id="testimonials">
-        <h2 class="section-title">Produsele Noastre</h2>
+      <section class="testimonials-section" id="testimonials2">
+        <h2 class="section-title">Galerie</h2>
         <div class="section-content">
           <div class="slider-container swiper">
             <div class="slider-wrapper">
@@ -283,12 +283,29 @@
               <p>www.laadrian.com</p>
             </li>
           </ul>
-          <form action="#" class="contact-form">
-            <input type="text" placeholder="Your name" class="form-input" required />
-            <input type="email" placeholder="Your email" class="form-input" required />
-            <textarea placeholder="Your message" class="form-input" required></textarea>
-            <button type="submit" class="button submit-button">Submit</button>
-          </form>
+<form id="form">
+  <div class="field">
+    <label for="name">Numele Dumneavoastra</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div class="field">
+    <label for="email">Adresa de email</label>
+    <input type="text" name="email" id="email">
+  <div class="field">
+    <label for="message">Ce mesaji doriti sa dati</label>
+    <input type="text" name="message" id="message">
+  </div>
+  <div class="field">
+  <input type="submit" id="button" value="Send Email" >
+</form>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('IZ1vsavsdmca1amUf')
+</script>
+      <script src="./components/example/folmular.js"></script>
         </div>
       </section>
       <!-- Footer section -->
