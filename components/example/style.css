@@ -730,3 +730,25 @@ input[type="submit"] {
     padding: 25px;
   }
 }
+/* Asigură-te că și câmpul de telefon are aceleași proprietăți moderne */
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"], /* <-- Am adăugat asta aici */
+.field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #252525;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Efectul de activare (focus) când utilizatorul începe să scrie numărul */
+.field input[type="tel"]:focus {
+  outline: none;
+  border-color: #4faf3f; /* Verdele tău principal */
+  box-shadow: 0 0 0 4px rgba(79, 175, 63, 0.12);
+}

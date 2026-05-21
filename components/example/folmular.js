@@ -4,17 +4,18 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btn.value = 'Se trimite...';
 
-   const serviceID = 'default_service';
+   const serviceID = 'default_service'; // sau ID-ul tău de service
    const templateID = 'template_d55aadl';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+      btn.value = 'Trimite Comanda';
+      alert('Comandă trimisă cu succes! Te vom suna în cel mai scurt timp.');
+      document.getElementById('form').reset(); // Golește formularul după trimitere
     }, (err) => {
-      btn.value = 'Send Email';
+      btn.value = 'Trimite Comanda';
       alert(JSON.stringify(err));
     });
 });
