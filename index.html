@@ -283,21 +283,29 @@
               <p>www.laadrian.com</p>
             </li>
           </ul>
-<form id="form">
-  <div class="field">
-    <label for="name">Numele Dumneavoastra</label>
-    <input type="text" name="name" id="name">
+<div class="contact-form-wrapper">
+      <form id="form" class="modern-form">
+        
+        <div class="field">
+          <label for="name">Numele Dumneavoastră</label>
+          <input type="text" name="name" id="name" placeholder="Ex: Gabriel Herascu" required>
+        </div>
+        
+        <div class="field">
+          <label for="email">Adresa de email</label>
+          <input type="email" name="email" id="email" placeholder="Ex: gherascu2011@gmail.com" required>
+        </div>
+        
+        <div class="field">
+          <label for="message">Ce mesaj doriți să ne lăsați?</label>
+          <textarea name="message" id="message" rows="4" placeholder="Ce plante doriți și în ce cantitate?" required></textarea>
+        </div>
+        
+        <input type="submit" id="button" value="Trimite Comanda">
+      </form>
+    </div>
+
   </div>
-  <div class="field">
-    <label for="email">Adresa de email</label>
-    <input type="text" name="email" id="email">
-  <div class="field">
-    <label for="message">Ce mesaji doriti sa dati</label>
-    <input type="text" name="message" id="message">
-  </div>
-  <div class="field">
-  <input type="submit" id="button" value="Send Email" >
-</form>
 
 <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
